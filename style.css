@@ -1,0 +1,63 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #dbeafe, #f8fafc);
+  margin: 0;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  font-size: 32px;
+  color: #111;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.form-box, .resume-box {
+  width: 45%;
+  padding: 20px;
+  border-radius: 15px;
+  background: white;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 12px;
+  margin: 8px 5px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #2563eb;
+  color: white;
+}
+
+button:hover {
+  background: #16a34a;
+}
+
+.top-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+#profilePic {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 2px solid gray;
+  object-fit: cover;
+}

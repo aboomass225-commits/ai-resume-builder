@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced AI Resume Builder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1 class="title">Advanced AI Resume Builder</h1>
+
+  <div class="container">
+
+    <!-- FORM -->
+    <div class="form-box">
+      <h2>Enter Details</h2>
+
+      <input type="text" id="name" placeholder="Full Name">
+      <input type="text" id="role" placeholder="Role">
+      <input type="email" id="email" placeholder="Email">
+      <input type="text" id="phone" placeholder="Phone">
+
+      <!-- Photo Upload -->
+      <label>Upload Profile Photo:</label>
+      <input type="file" id="photo" accept="image/*">
+
+      <textarea id="skills" placeholder="Skills (comma separated)"></textarea>
+      <textarea id="projects" placeholder="Projects"></textarea>
+      <textarea id="about" placeholder="About You"></textarea>
+
+      <button onclick="generateResume()">Generate Resume</button>
+      <button onclick="generateAISummary()">AI Summary</button>
+      <button onclick="saveData()">Save</button>
+      <button onclick="downloadPDF()">Download PDF</button>
+    </div>
+
+    <!-- RESUME PREVIEW -->
+    <div class="resume-box" id="resume">
+
+      <div class="top-section">
+        <img id="profilePic" src="" alt="Profile Photo">
+        <div>
+          <h2 id="rName">Your Name</h2>
+          <h3 id="rRole">Your Role</h3>
+        </div>
+      </div>
+
+      <p><b>Email:</b> <span id="rEmail"></span></p>
+      <p><b>Phone:</b> <span id="rPhone"></span></p>
+
+      <h3>Skills</h3>
+      <ul id="rSkills"></ul>
+
+      <h3>Projects</h3>
+      <p id="rProjects"></p>
+
+      <h3>About</h3>
+      <p id="rAbout"></p>
+
+    </div>
+
+  </div>
+
+  <!-- PDF -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
